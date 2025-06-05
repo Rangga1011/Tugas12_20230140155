@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulir Mahasiswa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>Formulir Data Mahasiswa</h2>
+
+  <form id="formMahasiswa">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" />
+
+    <label for="nim">NIM:</label>
+    <input type="text" id="nim" name="nim" />
+
+    <p class="radio-title">Peminatan pada bidang:</p>
+    <div class="radio-inline-group">
+      <label><input type="radio" name="pemintan" value="Programming" /> Programming</label>
+      <label><input type="radio" name="pemintan" value="Desain" /> Desain</label>
+      <label><input type="radio" name="pemintan" value="Jaringan" /> Jaringan</label>
+      <label><input type="radio" name="pemintan" value="Data" /> Data</label>
+    </div>
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat" rows="3"></textarea>
+
+    <label for="angkatan">Pilih Angkatan:</label>
+    <select id="angkatan" name="angkatan">
+      <option value="">-- Pilih Angkatan --</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
+    <label for="tanggal">Tanggal:</label>
+    <input type="date" id="tanggal" name="tanggal" />
+
+    <button type="button" onclick="kirimData()">Kirim</button>
+  </form>
+</body>
+</html>

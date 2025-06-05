@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  padding: 30px;
+  color: #333;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+label, .radio-title {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Styling untuk radio inline group */
+.radio-inline-group {
+  margin-top: 5px;
+  padding: 10px 15px;
+  background-color: #f2f9ff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* supaya kalau kecil layar pindah baris */
+}
+
+.radio-inline-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: normal;
+  user-select: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0288d1;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0277bd;
+}
